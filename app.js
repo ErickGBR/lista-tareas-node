@@ -1,9 +1,15 @@
 require("colors");
 
-const { mostrarMenu } = require("./helpers/mensajes");
+const { mostrarMenu, pausa } = require("./helpers/mensajes");
 const main = async () => {
   console.clear();
-  mostrarMenu();
+
+  let opt = "";
+  do{
+    opt = await mostrarMenu();
+    console.log(`Opcion seleccionada: ${opt}`);
+    await pausa();
+  }while(opt !== "0");
 };
 
 main();
