@@ -8,7 +8,20 @@ const guardarDB = (data)=>{
 const leerDb =()=>{
     if
 }
-
+//alquiler de esyes
 module.exports = {
     guardarDB
 }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
